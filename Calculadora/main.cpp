@@ -11,7 +11,7 @@ using namespace std;
        float imag;
     } numeroComplexo;
 
-//Definição das funções
+//DefiniÃ§Ã£o das funÃ§Ãµes
 numeroComplexo somanumeroComplexos(complex, complex);
 numeroComplexo subnumeroComplexos(complex, complex);
 
@@ -19,7 +19,7 @@ int main()
 {
     setlocale(LC_ALL,"");
 
-    //Variáveis
+    //VariÃ¡veis
 
     numeroComplexo num1, num2, somaComplexo,subComplexo;
     char sinaldaImagem;
@@ -33,32 +33,33 @@ int main()
 while(1)
     {
       system("cls");
-      cout<<"\n\t ***************** Calculadora **************\n";
-      cout<<"\n\t *****************   Simples     **************\n";
+      cout<<"\n\t\t\t ***************** Calculadora **************\n";
+      cout<<"\n\t\t\t *****************   Simples     **************\n";
       //Menu
-      cout<< "\n \t\t\t 1 - Potência";
+      cout<< "\n \t\t\t 1 - PotÃªncia";
       cout<< "\n \t\t\t 2 - Raiz";
       cout<< "\n \t\t\t 3 - Logaritmo";
       cout<< "\n \t\t\t 4 - Fatorial";
       cout<< "\n \t\t\t 5 - Soma de Complexos";
-      cout<< "\n \t\t\t 6 - Subtrações de Complexos";
+      cout<< "\n \t\t\t 6 - SubtraÃ§Ãµes de Complexos";
+      cout<< "\n \t\t\t 7 - Sair";
       cout<<endl;
 
-      //Solicitando ao usuário
-      cout<<" \n \t\t\t Selecione uma operação =>: ";
+      //Solicitando ao usuÃ¡rio
+      cout<<" \n \t\t\t Selecione uma operaÃ§Ã£o =>: ";
       cin>>op;
 
 
-      //Criando as opções do menu com Switch
+      //Criando as opÃ§Ãµes do menu com Switch
       switch(op)
        {
-            /* Potência */
+            /* PotÃªncia */
          case 1:
          reseta = 'S';
          while(reseta == 'S'|| reseta == 's')
             {
              system("cls");
-             cout<<"\n \t\t\t ****** POTÊNCIA ********\n";
+             cout<<"\n \t\t\t ****** POTÃŠNCIA ********\n";
              cout<<"\n Digite o valor da Base: ";
              cin>>base;
              cout<<"\n Digite o valor do Expoente: ";
@@ -70,7 +71,7 @@ while(1)
                  --expoente;
                 }
                 cout<<resultado;
-                cout<<"\n Deseja realizar outra potenciação? (S/N)";
+                cout<<"\n Deseja realizar outra potenciaÃ§Ã£o? (S/N)";
                 cin>>reseta;
             }
             break;
@@ -83,9 +84,9 @@ while(1)
             {
               system("cls");
               cout<<"\n \t\t\t ****** RAIZ QUADRADA ********\n";
-              cout<<"\n Digite um número para saber sua raiz quadrada: ";
+              cout<<"\n Digite um nÃºmero para saber sua raiz quadrada: ";
               cin>>numero;
-              //Condições
+              //CondiÃ§Ãµes
               if (numero>0)
                 {
 		         raiz = sqrt(numero);
@@ -93,8 +94,8 @@ while(1)
 	            }
 	            else
                 {
-                 cout<<"\n ----------- Número negativo ---------- \n";
-		         cout<<"\n Não existe raiz real (R) para negativos";
+                 cout<<"\n ----------- NÃºmero negativo ---------- \n";
+		         cout<<"\n NÃ£o existe raiz real (R) para negativos";
                 }
                 cout<<"\n Deseja realizar outra raiz quadrada? (S/N)";
                 cin>>reseta;
@@ -111,7 +112,7 @@ while(1)
                   cout<<"\n \t\t\t ****** LOGARITMO DE BASE 10 ********\n";
                   cout<<"\n Digite um inteiro: ";
 	              cin>>x;
-	              //Condições
+	              //CondiÃ§Ãµes
 	              if(x>0)
 	                {
 		             logaritmo_xbase10 = log10(x);
@@ -119,9 +120,9 @@ while(1)
 	                }
 	                else
                     {
-                      cout<<"\n NÚmero Inválido";
+                      cout<<"\n NÃšmero InvÃ¡lido";
 	                }
-	                cout<<"\n Deseja realizar outro cálculo de logaritmo? (S/N)";
+	                cout<<"\n Deseja realizar outro cÃ¡lculo de logaritmo? (S/N)";
                     cin>>reseta;
                 }
                 break;
@@ -136,10 +137,10 @@ while(1)
                      cout<<"\n \t\t\t ****** FATORIAL ********\n";
                      cout<<"\n Digite um inteiro positivo: ";
                      cin>>n;
-                     //Condição
+                     //CondiÃ§Ã£o
                      if(n < 0)
                         {
-                         cout<<"\n ERRO! O fatorial de um número negativo não existe!";
+                         cout<<"\n ERRO! O fatorial de um nÃºmero negativo nÃ£o existe!";
                         }
                         else
                         {
@@ -149,7 +150,7 @@ while(1)
                             }
                             cout<<"\n "<<n<<"! = "<<fatorial;
                         }
-                        cout<<"\n Deseja realizar outro cálculo de fatorial? (S/N)";
+                        cout<<"\n Deseja realizar outro cÃ¡lculo de fatorial? (S/N)";
                         cin>>reseta;
                     }
                     break;
@@ -162,22 +163,22 @@ while(1)
                         {
                           system("cls");
                           cout<<"\n \t\t\t ****** SOMA DE COMPLEXOS ********\n";
-                          cout << "\n \t\t\t ====== Para o primeiro número complexo =======\n" << endl;
-                          cout << "Digite primeiro a parte real e depois a imaginária:" << endl;
+                          cout << "\n \t\t\t ====== Para o primeiro nÃºmero complexo =======\n" << endl;
+                          cout << "Digite primeiro a parte real e depois a imaginÃ¡ria:" << endl;
                           cin >> num1.real >> num1.imag;
 
                           cout << endl
-                          << "\n \t\t\t ====== Para o segundo número complexo =======\n" << endl;
-                          cout << "Digite primeiro a parte real e depois a imaginária:" << endl;
+                          << "\n \t\t\t ====== Para o segundo nÃºmero complexo =======\n" << endl;
+                          cout << "Digite primeiro a parte real e depois a imaginÃ¡ria:" << endl;
                           cin >> num2.real >> num2.imag;
 
-                          // Chama a funçãoo soma e guarda em somaComplexo
+                          // Chama a funÃ§Ã£oo soma e guarda em somaComplexo
                           somaComplexo = somanumeroComplexos(num1, num2);
 
                          // Usa um tercerio operador para verificar o sinal do numero imaginario
                          sinaldaImagem = (somaComplexo.imag > 0) ? '+' : '-';
 
-                         // Usa um terceiro operador para ajustar o sinal do numero imaginário
+                         // Usa um terceiro operador para ajustar o sinal do numero imaginÃ¡rio
                          somaComplexo.imag = (somaComplexo.imag > 0) ? somaComplexo.imag : -somaComplexo.imag;
 
                          cout<<"\n\t ============= Calculando a soma dos complexos =============== \n";
@@ -191,49 +192,55 @@ while(1)
                         }
                         break;
 
-                        /* Subtração Complexos */
+                        /* SubtraÃ§Ã£o Complexos */
 
                         case 6:
                         reseta = 'S';
                         while(reseta == 'S'|| reseta == 's')
                             {
                               system("cls");
-                              cout<<"\n \t\t\t ****** SUBTRAÇÃO DE COMPLEXOS ********\n";
-                              cout << "\n \t\t\t ====== Para o primeiro número complexo =======\n" << endl;
-                              cout << "Digite primeiro a parte real e depois a imaginária:" << endl;
+                              cout<<"\n \t\t\t ****** SUBTRAÃ‡ÃƒO DE COMPLEXOS ********\n";
+                              cout << "\n \t\t\t ====== Para o primeiro nÃºmero complexo =======\n" << endl;
+                              cout << "Digite primeiro a parte real e depois a imaginÃ¡ria:" << endl;
                               cin >> num1.real >> num1.imag;
 
                               cout << endl
-                              << "\n \t\t\t ====== Para o segundo número complexo =======\n"  << endl;
-                              cout << "Digite primeiro a parte real e depois a imaginária:" << endl;
+                              << "\n \t\t\t ====== Para o segundo nÃºmero complexo =======\n"  << endl;
+                              cout << "Digite primeiro a parte real e depois a imaginÃ¡ria:" << endl;
                               cin >> num2.real >> num2.imag;
 
-                              // Chama a função subtração e guarda em subComplexo
+                              // Chama a funÃ§Ã£o subtraÃ§Ã£o e guarda em subComplexo
                               subComplexo = subnumeroComplexos(num1, num2);
 
                               // Usa um tercerio operador para verificar o sinal do numero imaginario
                               sinaldaImagem = (subComplexo.imag > 0) ? '+' : '-';
 
-                             // Usa um terceiro operador para ajustar o sinal do numero imaginário
+                             // Usa um terceiro operador para ajustar o sinal do numero imaginÃ¡rio
                              subComplexo.imag = (subComplexo.imag > 0) ? subComplexo.imag : -subComplexo.imag;
 
-                             cout<<"\n\t ============= Calculando a Subtração dos complexos =============== \n";
+                             cout<<"\n\t ============= Calculando a SubtraÃ§Ã£o dos complexos =============== \n";
                              cout<<endl;
                              cout << " ("<<num1.real<<" + "<<num1.imag<<"i) - ("<<num2.real<<" + "<<num2.imag<<"i)"<<" = " << subComplexo.real << sinaldaImagem << subComplexo.imag << "i";
                              cout<<"\n\n";
-                             cout<<"\n Deseja realizar outra substração de complexos? (S/N)";
+                             cout<<"\n Deseja realizar outra substraÃ§Ã£o de complexos? (S/N)";
                              cin>>reseta;
                             }
                             break;
 
+                            case 7:
+                            cout<<"\n\n";
+                            cout<<"\t\t       OBRIGADO POR USAR ESSE SOFTWARE!";
+                            cout<<"\t\t\t                  CRIADO POR: GUILHERME CHAVES";
+                            cout<<"\n\n";
+                            exit(0);
                             default:
-                            cout<<"\n Opção não existe \n";
+                            cout<<"\n OpÃ§Ã£o nÃ£o existe \n";
         }
     }
     return 0;
 }
 
-//Funções usadas em Complexos
+//FunÃ§Ãµes usadas em Complexos
 numeroComplexo somanumeroComplexos(complex num1, complex num2)
 {
     complex temp;
