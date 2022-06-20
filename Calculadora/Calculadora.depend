@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1655697964 source:c:\users\guilh\onedrive\documentos\estudos\programas em c\criados\calculadora\main.cpp
+	<iostream>
+	<locale.h>
+	<math.h>
+	<cstdio>
+	<cstring>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
