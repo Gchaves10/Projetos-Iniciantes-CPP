@@ -7,11 +7,11 @@ using namespace std;
 int main (int argc, char const* argv[])
 {
       setlocale (LC_ALL,"");
-      srand((unsigned)time(0)); //para gerar números aleatórios reais.
-      //Gerar números aleatórios de 0 a 100
+      srand((unsigned)time(0)); //para gerar nÃºmeros aleatÃ³rios reais.
+      //Gerar nÃºmeros aleatÃ³rios de 0 a 100
       int maior = 99;
       int menor = 0;
-      //Variaveis dos números
+      //Variaveis dos nÃºmeros
       int aleatorio = rand()%(maior-menor+1) + menor;
       int aleatorio_dois = rand()%(maior-menor+1) + menor;
 
@@ -38,7 +38,7 @@ int main (int argc, char const* argv[])
       if(resposta == aleatorio+aleatorio_dois)
       {
         system("cls");
-        cout<<"\n \t\t\t Você acertou!!";
+        cout<<"\n \t\t\t VocÃª acertou!!";
         cout<< "\n \t\t\t "<<aleatorio<<" + "<<aleatorio_dois<< " = "<<aleatorio+aleatorio_dois;
         acerto1 =1;
         cout<<"\n \t\t\t Acertos = "<<acerto1;
@@ -46,8 +46,8 @@ int main (int argc, char const* argv[])
       else
       {
         system("cls");
-        cout<<"\n Você respondeu: "<<resposta;
-        cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
+        cout<<"\n VocÃª respondeu: "<<resposta;
+        cout<<"\n \t\t\t Hmmm que tal revisar os cÃ¡lculos?!";
         cout<< "\n \t\t\t "<<aleatorio<<" + "<<aleatorio_dois<< " = "<<aleatorio+aleatorio_dois;
         acerto1 =0;
         cout<<"\n \t\t\t Acertos = "<<acerto1;
@@ -60,7 +60,7 @@ int main (int argc, char const* argv[])
       if(resposta == aleatorio_tres+aleatorio_quatro)
         {
          system("cls");
-         cout<<"\n \t\t\t Você acertou !!";
+         cout<<"\n \t\t\t VocÃª acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_tres<<" + "<<aleatorio_quatro<< " = "<<aleatorio_tres+aleatorio_quatro;
          if(acerto1 == 0)
             {
@@ -76,8 +76,8 @@ int main (int argc, char const* argv[])
         else
         {
          system("cls");
-         cout<<"\n Você respondeu: "<<resposta;
-         cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
+         cout<<"\n VocÃª respondeu: "<<resposta;
+         cout<<"\n \t\t\t Hmmm que tal revisar os cÃ¡lculos?!";
          cout<< "\n \t\t\t "<<aleatorio_tres<<" + "<<aleatorio_quatro<< " = "<<aleatorio_tres+aleatorio_quatro;
          cout<<"\n \t\t\t Acertos = "<<acerto1;
         }
@@ -90,14 +90,14 @@ int main (int argc, char const* argv[])
       if(resposta == aleatorio_cinco+aleatorio_seis)
         {
          system("cls");
-         cout<<"\n \t\t\t Você acertou !!";
+         cout<<"\n \t\t\t VocÃª acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
          if(acerto1&&acerto2 == 0)
             {
              acerto3 = 1;
              cout<<"\n \t\t\t Acertos = "<<acerto3;
             }
-         if(acerto2 == 2)
+         if(acerto2 == 2||acerto2==1)
             {
              acerto3 = acerto2+1;
              cout<<"\n \t\t\t Acertos = "<<acerto3;
@@ -106,8 +106,8 @@ int main (int argc, char const* argv[])
         else
         {
          system("cls");
-         cout<<"\n Você respondeu: "<<resposta;
-         cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
+         cout<<"\n VocÃª respondeu: "<<resposta;
+         cout<<"\n \t\t\t Hmmm que tal revisar os cÃ¡lculos?!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
          cout<<"\n \t\t\t Acertos = "<<acerto2;
         }
@@ -119,7 +119,7 @@ int main (int argc, char const* argv[])
       if(resposta == aleatorio_sete+aleatorio_oito)
         {
          system("cls");
-         cout<<"\n \t\t\t Você acertou !!";
+         cout<<"\n \t\t\t VocÃª acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_sete<<" + "<<aleatorio_oito<< " = "<<aleatorio_sete+aleatorio_oito;
          if(acerto1&&acerto2&&acerto3 == 0)
             {
@@ -135,8 +135,8 @@ int main (int argc, char const* argv[])
         else
         {
          system("cls");
-         cout<<"\n Você respondeu: "<<resposta;
-         cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
+         cout<<"\n VocÃª respondeu: "<<resposta;
+         cout<<"\n \t\t\t Hmmm que tal revisar os cÃ¡lculos?!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
          cout<<"\n \t\t\t Acertos = "<<acerto3;
         }
@@ -148,7 +148,7 @@ int main (int argc, char const* argv[])
       if(resposta == aleatorio_nove+aleatorio_dez)
         {
          system("cls");
-         cout<<"\n \t\t\t Você acertou !!";
+         cout<<"\n \t\t\t VocÃª acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_nove<<" + "<<aleatorio_dez<< " = "<<aleatorio_nove+aleatorio_dez;
          if(acerto1&&acerto2&&acerto3&&acerto4 == 0)
             {
@@ -164,8 +164,8 @@ int main (int argc, char const* argv[])
         else
         {
          system("cls");
-         cout<<"\n Você respondeu: "<<resposta;
-         cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
+         cout<<"\n VocÃª respondeu: "<<resposta;
+         cout<<"\n \t\t\t Hmmm que tal revisar os cÃ¡lculos?!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
          cout<<"\n \t\t\t Acertos = "<<acerto4;
         }
