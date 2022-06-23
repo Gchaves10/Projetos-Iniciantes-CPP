@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1655959067 source:c:\users\guilh\onedrive\documentos\estudos\programas em c\criados\sistema_de_fast_food\main.cpp
+	<iostream>
+	<conio.h>
+	<locale.h>
+
