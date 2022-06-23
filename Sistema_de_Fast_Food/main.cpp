@@ -36,8 +36,8 @@ int main()
     starting:
       system("cls");
       cout<<"\t\t\t|-------------------------------------------------------|\n";
-	  cout<<"\t\t\t|              SISTEMA DE PEDIDOS DE FAST FOOD          |\n";
-	  cout<<"\t\t\t|-------------------------------------------------------|\n\n";
+      cout<<"\t\t\t|              SISTEMA DE PEDIDOS DE FAST FOOD          |\n";
+      cout<<"\t\t\t|-------------------------------------------------------|\n\n";
 	  cout<<"Por favor, digite o seu nome: ";
 	  cin.getline(nome,20);
 	  cout<<"\n \t\t\t Olá "<<nome<<", o que gostaria de pedir?\n\n";
@@ -57,8 +57,8 @@ int main()
       {
         system("cls");
         cout<<"\t\t\t|-------------------------------------------------------|\n";
-	    cout<<"\t\t\t|                      PIZZAS                           |\n";
-	    cout<<"\t\t\t|-------------------------------------------------------|\n\n";
+	cout<<"\t\t\t|                      PIZZAS                           |\n";
+	cout<<"\t\t\t|-------------------------------------------------------|\n\n";
         cout<<"\n \t\t\t 1. "<<piz1<<"\n";
         cout<<"\n \t\t\t 2. "<<piz2<<"\n";
         cout<<"\n \t\t\t 3. "<<piz3<<"\n";
@@ -129,6 +129,70 @@ int main()
             }
         }
       }
+	else if(opcao == 2)
+      {
+        system("cls");
+        cout<<"\t\t\t|-------------------------------------------------------|\n";
+	cout<<"\t\t\t|                      HAMBÚRGUERES                     |\n";
+	cout<<"\t\t\t|-------------------------------------------------------|\n\n";
+        cout<<"\n \t\t\t 1. "<<burguer_1<<" R$10.00\n";
+        cout<<"\n \t\t\t 2. "<<burguer_2<<" R$15.00\n";
+        cout<<"\n \t\t\t 3. "<<burguer_3<<" R$20.00\n";
+        cout<<"\n \t\t\t Qual o hambúrguer gostaria de pedir?: ";
+        cin>>pizzaopcao1;
+        if(pizzaopcao1>=1&&pizzaopcao1<=3)
+        {
+         cout<<"\n \t\t\t === Quantidade ===\n";
+         cout<<"\n \t\t\t Selecione a quantidade: ";
+         cin>>quant;
+
+         switch(pizzaopcao1)
+            {
+             case 1:
+             opcao = 10*quant;
+             break;
+             case 2:
+             opcao = 15*quant;
+             break;
+             case 3:
+             opcao = 20*quant;
+             break;
+            }
+            system("cls");
+            switch(pizzaopcao1)
+            {
+             case 1:
+             cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
+             cout<<""<<quant<<" "<<burguer_1;
+             cout<<"\nTotal a pagar é: R$"<<opcao<<"\nSeu pedido será entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos serviços!\n";
+             break;
+             case 2:
+             cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
+             cout<<""<<quant<<" "<<burguer_2;
+             cout<<"\nTotal a pagar é: R$"<<opcao<<"\nSeu pedido será entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos serviços!\n";
+             break;
+             case 3:
+             cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
+             cout<<""<<quant<<" "<<burguer_3;
+             cout<<"\nTotal a pagar é: R$"<<opcao<<"\nSeu pedido será entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos serviços!\n";
+             break;
+            }
+            cout<<"\n \t\t\t Gostaria de pedir mais alguma coisa?(S/N): ";
+                cin>>gotobeginning;
+                if(gotobeginning == 'S'||gotobeginning == 's')
+                {
+                    goto starting;
+                    //return 0;
+                }
+
+        }
+      }
+      //opcao 3(23/06/2022)
+
+
 
 
 
