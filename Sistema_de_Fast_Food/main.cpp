@@ -17,7 +17,7 @@ int main()
     piz4[] ="Frango Catupiry",
     //Bebidas
     bebida1[]="Refrigerante",
-    bebida2[]="¡gua",
+    bebida2[]="√Ågua",
     bebida3[]="Suco Natural",
     //Hamburgueres
     burguer_1[]="X-Burguer",
@@ -25,7 +25,7 @@ int main()
     burguer_3[]="X-Tudo";
     //Lanches
     char lanche_1[]="Beirute",
-    lanche_2[]="P„o na Chapa",
+    lanche_2[]="P√£o na Chapa",
     lanche_3[]="Misto Quente";
     char fritas_1[]="Frango Frito",
     fritas_2[]="Batata Frita",
@@ -35,18 +35,18 @@ int main()
     int opcao = 0, pizzaopcao,pizzaopcao1,quant;// Time = 40;
     starting:
       system("cls");
-      cout<<"\t\t\t|-------------------------------------------------------|\n";
+          cout<<"\t\t\t|-------------------------------------------------------|\n";
 	  cout<<"\t\t\t|              SISTEMA DE PEDIDOS DE FAST FOOD          |\n";
 	  cout<<"\t\t\t|-------------------------------------------------------|\n\n";
 	  cout<<"Por favor, digite o seu nome: ";
 	  cin.getline(nome,20);
-	  cout<<"\n \t\t\t Ol· "<<nome<<", o que gostaria de pedir?\n\n";
+	  cout<<"\n \t\t\t Ol√° "<<nome<<", o que gostaria de pedir?\n\n";
 	  cout<<"\t\t\t|-------------------------------------------------------|\n";
-	  cout<<"\t\t\t|                      CARD¡PIO                         |\n";
+	  cout<<"\t\t\t|                      CARD√ÅPIO                         |\n";
 	  cout<<"\t\t\t|-------------------------------------------------------|\n\n";
 
       cout<<"\n \t\t\t 1. Pizzas\n";
-	  cout<<"\n \t\t\t 2. Hamb˙rgueres\n";
+	  cout<<"\n \t\t\t 2. Hamb√∫rgueres\n";
 	  cout<<"\n \t\t\t 3. Lanches\n";
 	  cout<<"\n \t\t\t 4. Bebidas\n";
 	  cout<<"\n \t\t\t 5. Frituras\n\n";
@@ -56,7 +56,7 @@ int main()
 	  if(opcao==1)
       {
         system("cls");
-        cout<<"\t\t\t|-------------------------------------------------------|\n";
+            cout<<"\t\t\t|-------------------------------------------------------|\n";
 	    cout<<"\t\t\t|                      PIZZAS                           |\n";
 	    cout<<"\t\t\t|-------------------------------------------------------|\n\n";
         cout<<"\n \t\t\t 1. "<<piz1<<"\n";
@@ -70,7 +70,7 @@ int main()
             cout<<"\n \t\t\t === Tamanho ===\n";
             cout<<"\n \t\t\t 1. Individual R$21.00";
             cout<<"\n \t\t\t 2. Normal     R$36.00";
-            cout<<"\n \t\t\t 3. FamÌlia    R$45.00";
+            cout<<"\n \t\t\t 3. Fam√≠lia    R$45.00";
             cout<<"\n \t\t\t Selecione o tamanho : ";
             cin>>pizzaopcao1;
             if(pizzaopcao1>=1&&pizzaopcao1<=3)
@@ -97,26 +97,26 @@ int main()
                  case 1:
                  cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
 			     cout<<""<<quant<<" "<<piz1;
-			     cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-			     cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+			     cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+			     cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
 			     break;
 			     case 2:
                  cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
 			     cout<<""<<quant<<" "<<piz2;
-			     cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-			     cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+			     cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+			     cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
 			     break;
 			     case 3:
                  cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
 			     cout<<""<<quant<<" "<<piz3;
-			     cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-			     cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+			     cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+			     cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
 			     break;
 			     case 4:
                  cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
 			     cout<<""<<quant<<" "<<piz4;
-			     cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-			     cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+			     cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+			     cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
 			     break;
                 }
                 cout<<"\n \t\t\t Gostaria de pedir mais alguma coisa?(S/N): ";
@@ -141,13 +141,13 @@ int main()
       else if(opcao == 2)
       {
         system("cls");
-        cout<<"\t\t\t|-------------------------------------------------------|\n";
-	    cout<<"\t\t\t|                      HAMB⁄RGUERES                     |\n";
+            cout<<"\t\t\t|-------------------------------------------------------|\n";
+	    cout<<"\t\t\t|                      HAMB√öRGUERES                     |\n";
 	    cout<<"\t\t\t|-------------------------------------------------------|\n\n";
         cout<<"\n \t\t\t 1. "<<burguer_1<<" R$10.00\n";
         cout<<"\n \t\t\t 2. "<<burguer_2<<" R$15.00\n";
         cout<<"\n \t\t\t 3. "<<burguer_3<<" R$20.00\n";
-        cout<<"\n \t\t\t Qual o hamb˙rguer gostaria de pedir?: ";
+        cout<<"\n \t\t\t Qual o hamb√∫rguer gostaria de pedir?: ";
         cin>>pizzaopcao1;
         if(pizzaopcao1>=1&&pizzaopcao1<=3)
         {
@@ -173,20 +173,20 @@ int main()
              case 1:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<burguer_1;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 2:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<burguer_2;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 3:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<burguer_3;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
             }
             cout<<"\n \t\t\t Gostaria de pedir mais alguma coisa?(S/N): ";
@@ -211,7 +211,7 @@ int main()
       else if(opcao == 3)
       {
         system("cls");
-        cout<<"\t\t\t|-------------------------------------------------------|\n";
+            cout<<"\t\t\t|-------------------------------------------------------|\n";
 	    cout<<"\t\t\t|                      LANCHES                          |\n";
 	    cout<<"\t\t\t|-------------------------------------------------------|\n\n";
         cout<<"\n \t\t\t 1. "<<lanche_1<<" R$7.00\n";
@@ -243,20 +243,20 @@ int main()
              case 1:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<lanche_1;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 2:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<lanche_2;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 3:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<lanche_3;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
             }
             cout<<"\n \t\t\t Gostaria de pedir mais alguma coisa?(S/N): ";
@@ -281,7 +281,7 @@ int main()
          else if(opcao == 4)
       {
         system("cls");
-        cout<<"\t\t\t|-------------------------------------------------------|\n";
+            cout<<"\t\t\t|-------------------------------------------------------|\n";
 	    cout<<"\t\t\t|                      BEBIDAS                          |\n";
 	    cout<<"\t\t\t|-------------------------------------------------------|\n\n";
         cout<<"\n \t\t\t 1. "<<bebida1<<" R$5.00\n";
@@ -313,20 +313,20 @@ int main()
              case 1:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<bebida1;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 2:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<bebida2;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 3:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<bebida3;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
             }
             cout<<"\n \t\t\t Gostaria de pedir mais alguma coisa?(S/N): ";
@@ -351,7 +351,7 @@ int main()
          else if(opcao == 5)
       {
         system("cls");
-        cout<<"\t\t\t|-------------------------------------------------------|\n";
+            cout<<"\t\t\t|-------------------------------------------------------|\n";
 	    cout<<"\t\t\t|                      FRITURAS                         |\n";
 	    cout<<"\t\t\t|-------------------------------------------------------|\n\n";
         cout<<"\n \t\t\t 1. "<<fritas_1<<" R$10.00\n";
@@ -383,20 +383,20 @@ int main()
              case 1:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<fritas_1;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 2:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<fritas_2;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
              case 3:
              cout<<"\n \t\t\t ====== SEU PEDIDO ======\n";
              cout<<""<<quant<<" "<<fritas_3;
-             cout<<"\nTotal a pagar È: R$"<<opcao<<"\nSeu pedido ser· entregue em 40 Minutos";
-             cout<<"\n\nObrigado por escolher nossos serviÁos!\n";
+             cout<<"\nTotal a pagar √©: R$"<<opcao<<"\nSeu pedido ser√° entregue em 40 Minutos";
+             cout<<"\n\nObrigado por escolher nossos servi√ßos!\n";
              break;
             }
             cout<<"\n \t\t\t Gostaria de pedir mais alguma coisa?(S/N): ";
@@ -422,7 +422,7 @@ int main()
       {
         system("cls");
         cout<<"\n \t\t\t ===== Selecione uma escolha ===== ";
-        cout<<"\n \t\t\t VocÍ gostaria de comeÁar o software novamente?(S/N): ";
+        cout<<"\n \t\t\t Voc√™ gostaria de come√ßar o software novamente?(S/N): ";
         cin>>gotobeginning;
         if(gotobeginning == 'S'|| gotobeginning == 's')
         {
