@@ -62,16 +62,8 @@ int main (int argc, char const* argv[])
          system("cls");
          cout<<"\n \t\t\t Você acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_tres<<" + "<<aleatorio_quatro<< " = "<<aleatorio_tres+aleatorio_quatro;
-         if(acerto1 == 0)
-            {
-             acerto2 = 1;
-             cout<<"\n \t\t\t Acertos = "<<acerto2;
-            }
-         if(acerto1 == 1)
-            {
-             acerto2 = acerto1+1;
-             cout<<"\n \t\t\t Acertos = "<<acerto2;
-            }
+         acerto2 = acerto1 + 1;
+         cout<<"\n \t\t\t Acertos = "<<acerto2;
         }
         else
         {
@@ -79,7 +71,8 @@ int main (int argc, char const* argv[])
          cout<<"\n Você respondeu: "<<resposta;
          cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
          cout<< "\n \t\t\t "<<aleatorio_tres<<" + "<<aleatorio_quatro<< " = "<<aleatorio_tres+aleatorio_quatro;
-         cout<<"\n \t\t\t Acertos = "<<acerto1;
+         acerto2 = acerto1 + 0;
+         cout<<"\n \t\t\t Acertos = "<<acerto2;
         }
 
         //Pergunta 3
@@ -92,16 +85,8 @@ int main (int argc, char const* argv[])
          system("cls");
          cout<<"\n \t\t\t Você acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
-         if(acerto1&&acerto2 == 0)
-            {
-             acerto3 = 1;
-             cout<<"\n \t\t\t Acertos = "<<acerto3;
-            }
-         if(acerto2 == 2||acerto2==1)
-            {
-             acerto3 = acerto2+1;
-             cout<<"\n \t\t\t Acertos = "<<acerto3;
-            }
+         acerto3=acerto2+1;
+         cout<<"\n \t\t\t Acertos = "<<acerto3;
         }
         else
         {
@@ -109,7 +94,8 @@ int main (int argc, char const* argv[])
          cout<<"\n Você respondeu: "<<resposta;
          cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
-         cout<<"\n \t\t\t Acertos = "<<acerto2;
+         acerto3=acerto2+0;
+         cout<<"\n \t\t\t Acertos = "<<acerto3;
         }
         //Pergunta 4
         cout<<"\n \t\t\t === 4.Qual a soma de "<<aleatorio_sete<<" + "<<aleatorio_oito<<"?===\n";
@@ -121,16 +107,8 @@ int main (int argc, char const* argv[])
          system("cls");
          cout<<"\n \t\t\t Você acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_sete<<" + "<<aleatorio_oito<< " = "<<aleatorio_sete+aleatorio_oito;
-         if(acerto1&&acerto2&&acerto3 == 0)
-            {
-             acerto4 = 1;
-             cout<<"\n \t\t\t Acertos = "<<acerto4;
-            }
-         if(acerto3 == 3||acerto3==2||acerto3 ==1)
-            {
-             acerto4 = acerto3+1;
-             cout<<"\n \t\t\t Acertos = "<<acerto4;
-            }
+         acerto4=acerto3+1;
+         cout<<"\n \t\t\t Acertos = "<<acerto4;
         }
         else
         {
@@ -138,7 +116,8 @@ int main (int argc, char const* argv[])
          cout<<"\n Você respondeu: "<<resposta;
          cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
-         cout<<"\n \t\t\t Acertos = "<<acerto3;
+         acerto4=acerto3+0;
+         cout<<"\n \t\t\t Acertos = "<<acerto4;
         }
         //Pergunta 5
         cout<<"\n \t\t\t === 5.Qual a soma de "<<aleatorio_nove<<" + "<<aleatorio_dez<<"?===\n";
@@ -150,16 +129,8 @@ int main (int argc, char const* argv[])
          system("cls");
          cout<<"\n \t\t\t Você acertou !!";
          cout<< "\n \t\t\t "<<aleatorio_nove<<" + "<<aleatorio_dez<< " = "<<aleatorio_nove+aleatorio_dez;
-         if(acerto1&&acerto2&&acerto3&&acerto4 == 0)
-            {
-             acerto5 = 1;
-             cout<<"\n \t\t\t Acertos = "<<acerto5;
-            }
-         if(acerto4==4||acerto4 == 3||acerto4==2||acerto4 ==1)
-            {
-             acerto5 = acerto4+1;
-             cout<<"\n \t\t\t Acertos = "<<acerto5;
-            }
+         acerto5=acerto4+1;
+         cout<<"\n \t\t\t Acertos = "<<acerto5;
         }
         else
         {
@@ -167,7 +138,8 @@ int main (int argc, char const* argv[])
          cout<<"\n Você respondeu: "<<resposta;
          cout<<"\n \t\t\t Hmmm que tal revisar os cálculos?!";
          cout<< "\n \t\t\t "<<aleatorio_cinco<<" + "<<aleatorio_seis<< " = "<<aleatorio_cinco+aleatorio_seis;
-         cout<<"\n \t\t\t Acertos = "<<acerto4;
+         acerto5=acerto4+0;
+         cout<<"\n \t\t\t Acertos = "<<acerto5;
         }
         cout<<"\n \t\t\t ======== FIM DO TESTE ========\n";
         return 0;
