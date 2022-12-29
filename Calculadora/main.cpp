@@ -237,6 +237,8 @@ while(1)
                             cout<<"\n Opção não existe \n";
         }
     }
+    cout<<"\n\n";
+    system("pause");
     return 0;
 }
 
