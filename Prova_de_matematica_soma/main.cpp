@@ -142,5 +142,6 @@ int main (int argc, char const* argv[])
          cout<<"\n \t\t\t Acertos = "<<acerto5;
         }
         cout<<"\n \t\t\t ======== FIM DO TESTE ========\n";
+        system("pause);
         return 0;
 }
