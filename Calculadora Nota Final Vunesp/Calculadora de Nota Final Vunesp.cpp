@@ -11,61 +11,72 @@ int main()
 	setlocale(LC_ALL,"");
 	
 	//Definindo variaveis
-	float acertos,acertos2,red,nf,enem1,enem;
-	long double n1,n2;
+	float acertos,acertos2,red,mf,enem1,enem,nf;
+	long double cg,cg2,auxcg;
+	char enemop;
 	
-	cout<<"\n\t Digite seu número de acertos na Primeira Fase Vestibular Vunesp: ";
+	cout<<"\n\t Digite seu nÃºmero de acertos na Primeira Fase Vestibular Vunesp: ";
 	cin>>acertos;
 	
 	if(acertos<=90)
 	{
-	  //Inicializando cálculos
-	  n1 = (acertos*100)/90;
-	  cout<<"\n\t Sua nota da primeira fase é: "<<n1;
+	  //Inicializando cÃ¡lculos
+	  cg = (acertos*100)/90;
+	  cout<<"\n\t Sua nota da primeira fase Ã©: "<<cg;
 	
 	}
 	else
 	{
-		cout<<"\n Nota não corresponde!";
+		cout<<"\n Nota nÃ£o corresponde!";
 	}
-
-    cout<<"\n\t Digite seu número de acertos na Segunda Fase Vestibular Vunesp: ";
+	cout<<"\n\t ======= PRIMEIRA FASE =======\n";
+	cout<<"\n\t Para o candidato que prestou o ENEM (Exame Nacional do Ensino MÃ©dio)";
+	cout<<"\n\t o desempenho da parte objetiva desse exame poderÃ¡ ser aproveitado na nota da Prova de Conhecimentos Gerais";
+	cout<<"\n\t do Vestibular da Unesp.";
+	cout<<"\n\t Deseja utilizar seu desempenho do ENEM? (S/N): ";
+	cin>> enemop;
+    if(enemop =='S'||enemop=='s')
+    {
+      cout<<"\n\t Digite seu nÃºmero de acertos do enem: ";
+	  cin>>enem;
+	  
+	  enem = (enem*100)/180;
+	  
+	    if(enem>cg)
+	    {
+		  auxcg =((4*cg+(1*enem))/5);
+		  cout<<"\n\t Sua nota final da primeira fase com ENEM Ã©: "<<auxcg;
+		  cg = auxcg;
+	    }
+		else if (enem<=cg)
+	    {
+		   auxcg=cg;
+		   cout<<"\n Sua nota final da primeira fase com ENEM Ã©: "<<nf;
+	    }	
+	}
+	
+	cout<<"\n\t Digite seu nÃºmero de acertos na Segunda Fase Vestibular Vunesp: ";
 	cin>>acertos2;
 	//Segunda fase
 	if(acertos<=60)
 	{
-		//Inicializando cálculos
-	    n2 = acertos2*1.2;
-	    cout<<"\n\t Sua nota da segunda fase é: "<<n2;	
+		//Inicializando cÃ¡lculos
+	    cg2 = acertos2*1.2;
+	    cout<<"\n\t Sua nota da segunda fase Ã©: "<<cg2;	
 	}
 	else
 	{
-		cout<<"\n Nota não corresponde!";
+		cout<<"\n Nota nÃ£o corresponde!";
 	}
-	cout<<"\n \t Insira sua nota da Redação (0-28): ";
+	cout<<"\n \t Insira sua nota da RedaÃ§Ã£o (0-28): ";
 	cin>>red;
 	
-	//Média Final
-	nf = (n1+n2+red)/2;
+	//MÃ©dia Final
+	mf = (cg+cg2+red)/2;
 	
-	if(nf<=100)
+	if(mf<=100)
 	{
-		cout<<"\n \t Sua nota final é: "<<nf;
-	}
-	//Enem
-	cout<<"\n\t Digite seu número de acertos do enem: ";
-	cin>>enem1;
-	
-	enem =enem1/2;
-	if(enem1>n1)
-	{
-		nf =((4*n1)+(1*enem))/5;
-		cout<<"\n\t Sua nota final é: "<<nf;
-	}
-	if (enem<=n1)
-	{
-		nf=n1;
-		cout<<"\n Sua nota final é: "<<nf;
+		cout<<"\n \t Sua MÃ©dia final do vestibular UNESP Ã©: "<<mf;
 	}
 	
 	cout<<"\n\n";
@@ -73,5 +84,4 @@ int main()
 	
 	return 0;
 }
-
 
