@@ -175,7 +175,7 @@ int main()
     }
     }
 	
-	cout<<"\n\n\";
+	cout<<"\n\n";
 	system ("pause");
 
 	return 0;
